@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<%-include('./common/header.ejs')%>
+    <!-- <h1>Hello <%# name %></h1> -->
+     <h1><%= stu.name %></h1>
+       <h1><%= stu.age %></h1>
+       <h1> <%= stu.marks %></h1>
+      <h1><%= stu.email %></h1>  
+       <% stu.hobbies.forEach((hob)=>{%>
+        <li><%=hob%></li>
+        <%})%>
+
+</body>
+</html>
